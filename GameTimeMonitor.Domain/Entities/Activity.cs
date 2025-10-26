@@ -1,4 +1,6 @@
-﻿namespace GameTimeMonitor.Domain.Entities
+﻿using GameTimeMonitor.Domain.Enums;
+
+namespace GameTimeMonitor.Domain.Entities
 {
     public class Activity
     {
@@ -8,6 +10,6 @@
         public DateTime StartTime { get; set; }
         public DateTime? EndTime { get; set; }
         public ActivityStatus Status { get; set; }
-        public string ApplicationName { get; set; }
+        public string ApplicationName { get; set; } // Nombre de la aplicación o juego
     }
 }
